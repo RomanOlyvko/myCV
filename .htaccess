@@ -1,0 +1,18 @@
+# Редирект с повторяющихся слешей
+RewriteCond %{REQUEST_URI} ^(.*)/{2,}(.*)$
+RewriteRule ^(.*)$ %1/%2 [R=301,L]
+
+# Редирект со слеша в конце на без него
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteRule ^(.+)/$ %1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^romanolyvko.lviv.ua [NC]
+RewriteRule ^(.*)$ https://romanolyvko.lviv.ua [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP
+RewriteRule ^index\.php$ https:///romanolyvko.lviv.ua/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https:///romanolyvko.lviv.ua/ [R=301,L]

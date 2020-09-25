@@ -1,0 +1,134 @@
+body {
+    background-image: url(../img/bg-c.png);
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+a,
+a:active,
+a:hover,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #808000;
+}
+
+/* Block_1 */
+a.cv {
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    z-index: 99999;
+    border: 1px solid #bebe7c;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #808000;
+    border-radius: 3px;
+    box-shadow: inset 0 0 40px #fff;
+}
+a.cv:hover {
+    box-shadow: 0 0 0 #808000;
+}
+.photo_user.col-md-4 a {
+    padding: 0 75px;
+}
+.photo_user a>span {
+    background: url(../img/olyvko.jpg) no-repeat center;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #808000;
+    box-shadow: 0 0 5px #808000;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name_user.col-md-9 div.text_head {
+    text-align: center;
+    padding: 20px;
+}
+.text_head h1 {
+    font-weight: bold;
+}
+.text_head h2 {
+    color: #808000;
+}
+.text_head_contact.col-md-12 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text_head_contact.col-md-12 div > p > svg {
+    color: #808000;
+}
+
+/* Block_2 */
+.line hr {
+    width: 100%;
+    background-color: #808000;
+}
+
+/* Block_3 */
+section hr {
+    background-color: #fff;
+}
+section.col-md-7 h4,
+section.col-md-5 h4{
+    color: #808000;
+}
+.to_top {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/up-arrow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,.15);
+    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+}
+@media screen and (max-width: 576px) {
+    .to_top {
+        bottom: 100px;
+    }
+}
+.to_top:hover {
+    background-color: #808000;
+}
+/* My_projects */
+.my_projects_two {
+    display: none;
+}
+@media (max-width: 768px){
+    .my_projects_one {
+        display: none;
+    }
+    .my_projects_two {
+        display: block;
+    }
+}
+/* Online/Offline */
+.online {
+    color: #008000;
+    background-color: #fff;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+.offline {
+    color: #ff0000;
+    background-color: #fff;
+    padding: 0 15px;
+    border-radius: 3px;
+}
